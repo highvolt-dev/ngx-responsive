@@ -7,42 +7,8 @@
 Superset of **RESPONSIVE DIRECTIVES** to show or hide items according to the size of the device screen and another features in Angular 9.
 
 ```bash
-npm i ngx-responsive --save
+npm i @viablelogic/ngx-responsive
 ```
-
-### If you use Angular 8 in your project.
-
-```bash
-npm i ngx-responsive@8.2.0 --save
-```
-
-### If you use Angular 7 in your project.
-
-```bash
-npm i ngx-responsive@7.0.1 --save
-```
-
-### If you use Angular 6 in your project.
-
-```bash
-npm i ngx-responsive@6.0.0 --save
-```
-
-### If you use Angular 5 in your project.
-
-```bash
-npm i ngx-responsive@5.0.8 --save
-```
-
-- Branch : [ngx-responsive@5.0.8](https://github.com/ManuCutillas/ngx-responsive/tree/v5.0.8)
-
-### If you use Angular 4 in your project use ng2-responsive.
-
-```bash
-npm i ng2-responsive --save
-```
-
-- Branch : [ng2-responsive](https://github.com/ManuCutillas/ngx-responsive/tree/v4.0.1)
 
 `RESPONSIVE_DIRECTIVES` provides the following features:
 
@@ -83,7 +49,7 @@ npm i ng2-responsive --save
 
   ```typescript
   import { NgModule } from '@angular/core'
-  import { ResponsiveModule } from 'ngx-responsive'
+  import { ResponsiveModule } from '@viablelogic/ngx-responsive'
   ...
   @NgModule({
       imports: [
@@ -101,7 +67,7 @@ npm i ng2-responsive --save
 
   ```typescript
     import { NgModule } from '@angular/core'
-    import { ResponsiveModule } from 'ngx-responsive'
+    import { ResponsiveModule } from '@viablelogic/ngx-responsive'
     ...
     const config = {
       breakPoints: {

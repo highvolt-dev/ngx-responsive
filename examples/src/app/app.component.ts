@@ -3,7 +3,7 @@ import {
   IeInfoRx, ResponsiveSizeInfoRx, OrientationInfoRx, DeviceStandardInfoRx,
   DeviceInfoRx,
   UserAgentInfoRx, BrowserInfoRx,
-} from 'ngx-responsive';
+} from '@viablelogic/ngx-responsive';
 // tslint:disable-next-line:ordered-imports
 import { OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';

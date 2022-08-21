@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ResponsiveModule, IResponsiveConfig } from 'ngx-responsive';
+import { ResponsiveModule, IResponsiveConfig } from '@viablelogic/ngx-responsive';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
