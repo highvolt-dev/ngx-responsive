@@ -60,11 +60,12 @@ export class ResponsiveModule {
                 provide: RESPONSIVE_CONFIGURATION,
                 useValue: (config !== null) ? config : {
                     breakPoints: {
-                        xs: { max: 767 },
-                        sm: { min: 768, max: 991 },
-                        md: { min: 992, max: 1199 },
-                        lg: { min: 1200, max: 1599 },
-                        xl: { min: 1600 }
+                        xs: { max: 575 },
+                        sm: { min: 576, max: 767 },
+                        md: { min: 768, max: 991 },
+                        lg: { min: 992, max: 1199 },
+                        xl: { min: 1200, max: 1399 },
+                        xxl: { min: 1400 },
                     },
                     debounceTime: 100,
                     renderOnServer: false

@@ -28,6 +28,7 @@
     "angularCompilerOptions": {
         "genDir": "./dist",
         "skipMetadataEmit": false,
-        "skipTemplateCodegen": true
+        "skipTemplateCodegen": true,
+        "strictTemplates": true
     }
 }

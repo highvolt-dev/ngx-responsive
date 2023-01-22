@@ -10,6 +10,26 @@ import { ResponsiveState } from '../../@core/providers/responsive-state/responsi
 import { RESPONSIVE_BASE } from '../../@core/providers/responsive-base/responsive-base';
 import { PlatformService } from '../../@core/providers/platform-service/platform.service';
 @Directive({
+    selector: '[xxl]'
+})
+export class XxlDirective extends RESPONSIVE_BASE<any> {
+
+    protected _state = 'xxl';
+    protected _showWhenTrue = true;
+    
+    constructor( templateRef: TemplateRef<any>,
+                 viewContainer: ViewContainerRef,
+                 _responsiveState: ResponsiveState,
+                 cd: ChangeDetectorRef,
+                 platformService: PlatformService
+    ) {
+
+        super ( templateRef, viewContainer, _responsiveState, cd, platformService );
+        this.setGrid(this._state, 'bootstrap');
+    }
+}
+
+@Directive({
     selector: '[xl]'
 })
 export class XlDirective extends RESPONSIVE_BASE<any> {

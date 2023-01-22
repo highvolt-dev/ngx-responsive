@@ -10,7 +10,8 @@ export interface IResponsiveConfig {
         sm: { min: number, max: number },
         md: { min: number, max: number },
         lg: { min: number, max: number },
-        xl: { min: number }
+        xl: { min: number, max: number },
+        xxl: { min: number },
     };
     debounceTime: number;
     renderOnServer?: boolean;
