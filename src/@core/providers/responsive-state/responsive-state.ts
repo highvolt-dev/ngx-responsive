@@ -193,20 +193,20 @@ export class ResponsiveState {
      */
     public sizeOperations(): any {
         let _sizes = null;
-        const _breackpoints = this._responsiveConfig.config.breakPoints;
-        if (this._windows !== null && this.isEnabledForPlatform && _breackpoints !== null) {
+        const _breakPoints = this._responsiveConfig.config.breakPoints;
+        if (this._windows !== null && this.isEnabledForPlatform && _breakPoints !== null) {
             const _width = this.getWidth('window');
-            if (_breackpoints.xxl.min <= _width) {
+            if (_breakPoints.xxl.min <= _width) {
                 _sizes = 'xxl';
-            } else if (_breackpoints.xl.max <= _width && _breackpoints.xl.min <= _width) {
+            } else if (_breakPoints.xl.max >= _width && _breakPoints.xl.min <= _width) {
                 _sizes = 'xl';
-            } else if (_breackpoints.lg.max >= _width && _breackpoints.lg.min <= _width) {
+            } else if (_breakPoints.lg.max >= _width && _breakPoints.lg.min <= _width) {
                 _sizes = 'lg';
-            } else if (_breackpoints.md.max >= _width && _breackpoints.md.min <= _width) {
+            } else if (_breakPoints.md.max >= _width && _breakPoints.md.min <= _width) {
                 _sizes = 'md';
-            } else if (_breackpoints.sm.max >= _width && _breackpoints.sm.min <= _width) {
+            } else if (_breakPoints.sm.max >= _width && _breakPoints.sm.min <= _width) {
                 _sizes = 'sm';
-            } else if (_breackpoints.xs.max >= _width) {
+            } else if (_breakPoints.xs.max >= _width) {
                 _sizes = 'xs';
             }
         }
