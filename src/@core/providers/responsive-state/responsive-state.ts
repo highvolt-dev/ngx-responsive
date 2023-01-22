@@ -196,7 +196,9 @@ export class ResponsiveState {
         const _breackpoints = this._responsiveConfig.config.breakPoints;
         if (this._windows !== null && this.isEnabledForPlatform && _breackpoints !== null) {
             const _width = this.getWidth('window');
-            if (_breackpoints.xl.min <= _width) {
+            if (_breackpoints.xxl.min <= _width) {
+                _sizes = 'xxl';
+            } else if (_breackpoints.xl.max <= _width && _breackpoints.xl.min <= _width) {
                 _sizes = 'xl';
             } else if (_breackpoints.lg.max >= _width && _breackpoints.lg.min <= _width) {
                 _sizes = 'lg';

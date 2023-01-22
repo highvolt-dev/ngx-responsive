@@ -6,6 +6,7 @@
  */
 import { Provider } from '@angular/core';
 import {
+  XxlDirective,
   XlDirective,
   LgDirective,
   MdDirective,
@@ -18,6 +19,7 @@ import {
 export * from './bootstrap-directives';
 
 export const BOOTSTRAP_DIRECTIVES: Provider[] = [
+  XxlDirective,
   XlDirective,
   LgDirective,
   MdDirective,

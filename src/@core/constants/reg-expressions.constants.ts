@@ -16,7 +16,7 @@ import { BOTS } from './generic-bots.constants';
 import { BROWSER_NAMES } from './browser-names.constants';
 
 /* export const GLOBAL_INPUTS = {
-    BOOTSTRAP: ['xs', 'sm', 'md', 'lg', 'xl'],
+    BOOTSTRAP: ['xs', 'sm', 'md', 'lg', 'xl', 'xxl'],
     DEVICES: ['mobile', 'tablet', 'smarttv', 'desktop'],
     STANDARD: ['iphone', 'ipad', 'android mobile', 'android tablet', 'windows phone'],
     ORIENTATION: ['portrait', 'landscape'],
